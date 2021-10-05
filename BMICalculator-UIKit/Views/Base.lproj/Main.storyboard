@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMIBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aw0-fu-ENP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMICalcBG" translatesAutoresizingMaskIntoConstraints="NO" id="Aw0-fu-ENP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMILogo-color" translatesAutoresizingMaskIntoConstraints="NO" id="vVv-7N-2RE">
@@ -177,6 +177,7 @@
     </scenes>
     <resources>
         <image name="BMIBackground" width="375" height="812"/>
+        <image name="BMICalcBG" width="375" height="812"/>
         <image name="BMILogo-color" width="153" height="96.5"/>
         <namedColor name="AccentColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

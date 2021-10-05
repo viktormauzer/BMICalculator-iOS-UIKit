@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
     //MARK: - IBActions
 

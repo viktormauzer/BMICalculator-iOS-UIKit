@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0F2B1C270C63C700827F83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBA8C6ED270AFF9400CC1950 /* Main.storyboard */,
+				DBA8C6F2270AFF9500CC1950 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DBA8C6DB270AFF9400CC1950 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +72,9 @@
 				DBA8C6E7270AFF9400CC1950 /* AppDelegate.swift */,
 				DBA8C6E9270AFF9400CC1950 /* SceneDelegate.swift */,
 				DBA8C6FE270B46C100CC1950 /* Models */,
+				DB0F2B1C270C63C700827F83 /* Views */,
 				DBA8C6FB270B2CA700CC1950 /* Controllers */,
-				DBA8C6ED270AFF9400CC1950 /* Main.storyboard */,
 				DBA8C6F0270AFF9500CC1950 /* Assets.xcassets */,
-				DBA8C6F2270AFF9500CC1950 /* LaunchScreen.storyboard */,
 				DBA8C6F5270AFF9500CC1950 /* Info.plist */,
 			);
 			path = "BMICalculator-UIKit";
