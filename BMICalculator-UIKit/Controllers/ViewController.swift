@@ -13,8 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet var weightLabel: UILabel!
     @IBOutlet var heightSlider: UISlider!
     @IBOutlet var weightSlider: UISlider!
+    @IBOutlet var calculateButton: UIButton!
     
     var bmiCalculatorBrain = BMICalculatorBrain()
+    var heightChanged = false
+    var weightChanged = false
     
     //MARK: - Overrides
     
@@ -43,16 +46,24 @@ class ViewController: UIViewController {
     //MARK: - IBActions
 
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        bmiCalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
-        performSegue(withIdentifier: "ToResultVC", sender: self)
+        if heightChanged && weightChanged {
+            bmiCalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
+            performSegue(withIdentifier: "ToResultVC", sender: self)
+        } else {
+            calculateButton.setTitle("Please specify height & weight", for: .normal)
+        }
     }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         heightLabel.text = "\(String(format: "%.1f", sender.value)) centimeters"
+        heightChanged = true
+        calculateButton.setTitle("CALCULATE", for: .normal)
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         weightLabel.text = "\(String(format: "%.1f", sender.value)) kilograms"
+        weightChanged = true
+        calculateButton.setTitle("CALCULATE", for: .normal)
     }
     
     

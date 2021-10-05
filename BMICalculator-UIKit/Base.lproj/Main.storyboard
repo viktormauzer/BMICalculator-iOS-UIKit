@@ -96,6 +96,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="RWc-Dh-ICA" id="UUV-pA-PNe"/>
                         <outlet property="heightLabel" destination="VAE-kn-MKI" id="SZa-FV-QOe"/>
                         <outlet property="heightSlider" destination="9PJ-ME-anK" id="1Xt-j3-hnR"/>
                         <outlet property="logoImage" destination="vVv-7N-2RE" id="cEV-Af-q1S"/>
