@@ -10,15 +10,18 @@ import UIKit
 class ResultsViewController: UIViewController {
     @IBOutlet var bmiResultLabel: UILabel!
     
+    var bmiValue: Float?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let bmiString = bmiValue {
+            bmiResultLabel.text = String(format: "%.1f", bmiString)
+        }
     }
     
     @IBAction func recalculateButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func closeIconPressed(_ sender: UIButton) {
-    }
 }

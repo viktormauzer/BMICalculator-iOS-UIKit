@@ -14,6 +14,7 @@
 		DBA8C6F1270AFF9500CC1950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA8C6F0270AFF9500CC1950 /* Assets.xcassets */; };
 		DBA8C6F4270AFF9500CC1950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA8C6F2270AFF9500CC1950 /* LaunchScreen.storyboard */; };
 		DBA8C6FD270B2CCA00CC1950 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8C6FC270B2CCA00CC1950 /* ResultsViewController.swift */; };
+		DBA8C700270B46DE00CC1950 /* BMICalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8C6FF270B46DE00CC1950 /* BMICalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBA8C6F3270AFF9500CC1950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA8C6F5270AFF9500CC1950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA8C6FC270B2CCA00CC1950 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		DBA8C6FF270B46DE00CC1950 /* BMICalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				DBA8C6E7270AFF9400CC1950 /* AppDelegate.swift */,
 				DBA8C6E9270AFF9400CC1950 /* SceneDelegate.swift */,
+				DBA8C6FE270B46C100CC1950 /* Models */,
 				DBA8C6FB270B2CA700CC1950 /* Controllers */,
 				DBA8C6ED270AFF9400CC1950 /* Main.storyboard */,
 				DBA8C6F0270AFF9500CC1950 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				DBA8C6FC270B2CCA00CC1950 /* ResultsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBA8C6FE270B46C100CC1950 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA8C6FF270B46DE00CC1950 /* BMICalculatorBrain.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				DBA8C6E8270AFF9400CC1950 /* AppDelegate.swift in Sources */,
 				DBA8C6EA270AFF9400CC1950 /* SceneDelegate.swift in Sources */,
 				DBA8C6FD270B2CCA00CC1950 /* ResultsViewController.swift in Sources */,
+				DBA8C700270B46DE00CC1950 /* BMICalculatorBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

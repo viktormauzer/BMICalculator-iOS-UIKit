@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var heightSlider: UISlider!
     @IBOutlet var weightSlider: UISlider!
     
+    var bmiCalculatorBrain = BMICalculatorBrain()
+    
+    //MARK: - Overrides
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         determineDeviceOrientation()
@@ -24,15 +28,23 @@ class ViewController: UIViewController {
         determineDeviceOrientation()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ToResultVC") {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.bmiValue = bmiCalculatorBrain.getBMIValue()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     
     //MARK: - IBActions
 
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
+        bmiCalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
+        performSegue(withIdentifier: "ToResultVC", sender: self)
     }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {

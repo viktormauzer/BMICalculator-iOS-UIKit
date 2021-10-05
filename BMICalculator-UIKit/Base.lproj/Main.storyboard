@@ -36,7 +36,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IfG-iK-HHf"/>
-                                            <segue destination="tBq-ww-mKx" kind="presentation" id="zPc-aX-dnZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -102,6 +101,7 @@
                         <outlet property="logoImage" destination="vVv-7N-2RE" id="cEV-Af-q1S"/>
                         <outlet property="weightLabel" destination="MTo-ry-jbB" id="YwD-ci-XbS"/>
                         <outlet property="weightSlider" destination="VX8-aL-dyT" id="vr4-yR-EzT"/>
+                        <segue destination="tBq-ww-mKx" kind="showDetail" identifier="ToResultVC" id="nDW-er-Afp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,17 +136,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXq-Dl-ISf">
-                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="54"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="✖︎" titleAlignment="automatic">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" name="BMIPink"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="closeIconPressed:" destination="tBq-ww-mKx" eventType="touchUpInside" id="5ep-iG-pf2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1k-5A-9JC">
                                 <rect key="frame" x="20" y="738" width="374" height="50"/>
                                 <constraints>
@@ -167,15 +156,12 @@
                         <constraints>
                             <constraint firstItem="bRj-K4-Hu1" firstAttribute="centerX" secondItem="pq1-66-z1l" secondAttribute="centerX" id="0c2-AV-lCA"/>
                             <constraint firstItem="97m-42-nph" firstAttribute="bottom" secondItem="O1k-5A-9JC" secondAttribute="bottom" constant="20" id="2uE-NQ-1Cm"/>
-                            <constraint firstItem="XXq-Dl-ISf" firstAttribute="top" secondItem="97m-42-nph" secondAttribute="top" id="FO7-9U-I2v"/>
                             <constraint firstItem="BZz-Es-Z2k" firstAttribute="leading" secondItem="pq1-66-z1l" secondAttribute="leading" id="JO7-Hp-ADo"/>
                             <constraint firstItem="O1k-5A-9JC" firstAttribute="leading" secondItem="97m-42-nph" secondAttribute="leading" constant="20" id="KFC-cG-bKC"/>
                             <constraint firstItem="bRj-K4-Hu1" firstAttribute="centerY" secondItem="pq1-66-z1l" secondAttribute="centerY" id="OTv-Q8-4rI"/>
                             <constraint firstItem="97m-42-nph" firstAttribute="trailing" secondItem="O1k-5A-9JC" secondAttribute="trailing" constant="20" id="XG2-NL-mmv"/>
                             <constraint firstItem="BZz-Es-Z2k" firstAttribute="top" secondItem="97m-42-nph" secondAttribute="top" id="ZBY-K0-KKK"/>
                             <constraint firstAttribute="bottom" secondItem="BZz-Es-Z2k" secondAttribute="bottom" id="hk4-rE-IUJ"/>
-                            <constraint firstItem="97m-42-nph" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XXq-Dl-ISf" secondAttribute="trailing" constant="365" id="j7M-nW-AbD"/>
-                            <constraint firstItem="XXq-Dl-ISf" firstAttribute="leading" secondItem="97m-42-nph" secondAttribute="leading" id="tlP-2b-Zph"/>
                             <constraint firstAttribute="trailing" secondItem="BZz-Es-Z2k" secondAttribute="trailing" id="wmZ-rP-DiV"/>
                         </constraints>
                     </view>
