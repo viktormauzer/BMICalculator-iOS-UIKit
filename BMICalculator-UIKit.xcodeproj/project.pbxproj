@@ -28,6 +28,7 @@
 		DBA8C6F5270AFF9500CC1950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA8C6FC270B2CCA00CC1950 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		DBA8C6FF270B46DE00CC1950 /* BMICalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorBrain.swift; sourceTree = "<group>"; };
+		DBABE2FD270C8AF60084A326 /* BMICalculator-UIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BMICalculator-UIKit.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		DBA8C6E6270AFF9400CC1950 /* BMICalculator-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DBABE2FD270C8AF60084A326 /* BMICalculator-UIKit.entitlements */,
 				DBA8C6E7270AFF9400CC1950 /* AppDelegate.swift */,
 				DBA8C6E9270AFF9400CC1950 /* SceneDelegate.swift */,
 				DBA8C6FE270B46C100CC1950 /* Models */,
@@ -319,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BMICalculator-UIKit/BMICalculator-UIKit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KHDB3W3N3A;
@@ -337,9 +340,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viktormauzer.BMICalculator-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -348,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BMICalculator-UIKit/BMICalculator-UIKit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KHDB3W3N3A;
@@ -366,9 +372,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viktormauzer.BMICalculator-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
